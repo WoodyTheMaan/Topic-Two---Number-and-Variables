@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            string name, passwordUseless;
-            int yearOfBirth;
+            string name, passwordUseless, friendName;
+            int yearOfBirth, year, theFirstNumber, theSecondNumber, theThirdNumber;
             Console.WriteLine("Hello, to continue please enter your name.");
             name = Console.ReadLine();
             Console.WriteLine($"Thanks {name} please wait while we get your account setup this may take a moment....");
@@ -21,11 +21,32 @@
             yearOfBirth = Convert.ToInt32(Console.ReadLine());
             Thread.Sleep(1000);
             Console.WriteLine($"Thanks {name} ");
-            string year = DateTime.Parse(DateTime.Now.ToString()).Year.ToString();
-            Convert.ToInt32(year);
-            Console.WriteLine(yearOfBirth + year);
-
-
+            year = DateTime.Now.Year;
+    
+            Console.WriteLine($"You were born in {year - yearOfBirth}");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Now, please type a number below.");
+            theFirstNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("");
+            Console.WriteLine($"Great {name}! Now pick a second number");
+            theSecondNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("");
+            Console.WriteLine($"Great {name}! Now pick a third number");
+            theThirdNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("");
+            Console.WriteLine($"Great {name}! Now I will take all three numbers and add them together!!");
+            Console.WriteLine($"{ theFirstNumber + theSecondNumber + theThirdNumber} is all three numbers added together.");
+            Thread.Sleep(3000);
+            Console.WriteLine("");
+            Console.WriteLine("Imagine were going on a trip three times with your friend please make a name for your friend!");
+            Console.ReadLine();
+            Console.WriteLine($"Thanks! {friendName} is a great name for a friend!");
         }
     }
 }
