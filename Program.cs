@@ -6,7 +6,7 @@
         {
             string name, passwordUseless, friendName;
             int yearOfBirth, year, theFirstNumber, theSecondNumber, theThirdNumber;
-            double km1, km2, km3;
+            double km1, km2, km3, firstLength, secondLength, theHype;
             Console.WriteLine("Hello, to continue please enter your name.");
             name = Console.ReadLine();
             Console.WriteLine($"Thanks {name} please wait while we get your account setup this may take a moment....");
@@ -96,12 +96,19 @@
             Console.WriteLine("To continue, click 'ENTER'");
             Console.ReadLine();
             Console.WriteLine("I would like to tell you the average kilometers of all three of your trips!");
-            km1 = Math.Round(km1, 2);
-            km2 = Math.Round(km2, 2);
-            km3 = Math.Round(km3, 2);
             km1 = km1 + km2 + km3 / 3;
             km1 = Math.Round(km1, 2);
             Console.WriteLine($"Your trip average is {km1}.");
+            Console.WriteLine("Now, picture this, you must make a triangle. Only the two sides though.");
+            Console.WriteLine("So give me the length of the triangle and I'll find the hypotenuse!");
+            Console.WriteLine("The first length below here.");
+            firstLength = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Thanks! {name}");
+            Console.WriteLine("And the second one?");
+            secondLength = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Great!");
+            theHype = Math.Sqrt(firstLength) + Math.Sqrt(secondLength);
+            Console.WriteLine($"With the info you've given me, the hypotenuse is {theHype}");
 
         }
     }
