@@ -1,4 +1,6 @@
-﻿namespace Topic_Two___Number_and_Variables
+﻿using System;
+
+namespace Topic_Two___Number_and_Variables
 {
     internal class Program
     {
@@ -109,7 +111,8 @@
             Console.WriteLine("Great!");
             theHype = Math.Sqrt(firstLength) + Math.Sqrt(secondLength);
             Console.WriteLine($"With the info you've given me, the hypotenuse is {theHype}");
-
+            Console.WriteLine("Click ENTER 2 times in a row real fast to exit!");
+            Console.ReadLine();
         }
     }
 }
